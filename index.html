@@ -1,0 +1,50 @@
+<!doctype html>
+<html class="no-js">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title></title>
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<style type="text/css" rel="stylesheet">
+.txt {
+	margin: 0 0 20px;
+	font-size: 150px;
+	line-height: 160px;
+	font-weight: 900;
+	text-align: center;
+	/*letter-spacing: 35px;*/
+	color: #FFF;
+	text-shadow: 5px 5px 5px #000;
+}
+table {
+	width:100%;
+}
+td {
+	vertical-align: middle;
+}
+</style>
+</head>
+<body bgcolor="black">
+
+<table id="tb"><tr><td>
+<p class="txt">公民提名</p>
+<p class="txt">不可或缺</p>
+</td></tr></table>
+<script>
+var tbb = document.getElementById('tb');
+tbb.style.height = (window.innerHeight - 22) + "px";
+var colorPro = function() {
+	var r = Math.random() * 128 + 127,
+		g = Math.random() * 128 + 127,
+		b = Math.random() * 128 + 127,
+		a = Math.random();
+	document.body.bgColor = 'rgba(' + r + ', ' + g + ', ' + b + ', ' + a + ')';
+}
+
+setInterval(colorPro, 1000);
+
+</script>
+</body>
+</html>
